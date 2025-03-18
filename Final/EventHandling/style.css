@@ -1,0 +1,54 @@
+.gallery {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-image {
+  margin-bottom: 1rem;
+}
+
+.main-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.thumb {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+}
+
+.thumbnails {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh; 
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  margin-left: auto;
+}
+
+.thumbnails nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
